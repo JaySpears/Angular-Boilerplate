@@ -1,0 +1,16 @@
+{
+  "name": "ngBoilerplate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/JoshSpears3/ngBoilerplate",
+  "authors": [
+    "JoshSpears3 <josh.spears@sq1.com>"
+  ],
+  "description": "Boilerplate using AngularJS",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "angular-route": "~1.4.2",
+    "angular-local-storage": "~0.2.2",
+    "angular": "~1.4.2"
+  }
+}
