@@ -1,5 +1,5 @@
 #Angular Boilerplate
-#####Clone down the repository in your terminal:
+####Clone down the repository in your terminal:
 #####`git clone git@github.com:JoshSpears3/ngBoilerplate.git`
 
 ##Dependencies
