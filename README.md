@@ -16,4 +16,4 @@
 - grunt-contrib-uglify
 - grunt-contrib-concat
 
-####3. Run the `grunt` command in yout terminal to start up your server.
+####3. Run the `grunt` command in yout terminal to start up the server.
