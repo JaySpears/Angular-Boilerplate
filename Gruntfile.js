@@ -15,16 +15,16 @@ module.exports = function(grunt) {
 			}
 		},
 
-    // Minifies CSS
-    cssmin: {
-      minify: {
-        expand: true,
-        cwd: 'public/assets/css',
-        src: ['styles.css'],
-        dest: 'public/assets/css',
-        ext: '.min.css'
-      }
-    },
+		// Minifies CSS
+		cssmin: {
+			minify: {
+				expand: true,
+				cwd: 'public/assets/css',
+				src: ['styles.css'],
+				dest: 'public/assets/css',
+				ext: '.min.css'
+			}
+		},
 
 		// HTTP Server
 		connect: {
@@ -40,21 +40,21 @@ module.exports = function(grunt) {
 		//Compiles controllers, directives, filters, and services into each of their own compiled file.
 		concat: {
 			angular_controllers: {
-        src: ['public/app/controllers/src/*.js'],
-        dest: 'public/app/controllers/controllers.js'
-	    },
-	    angular_directives: {
-        src: ['public/app/directives/src/*.js'],
-        dest: 'public/app/directives/directives.js'
-	    },
-	    angular_filters: {
-        src: ['public/app/filters/src/*.js'],
-        dest: 'public/app/filters/filters.js'
-	    },
-	    angular_services: {
-        src: ['public/app/services/src/*.js'],
-        dest: 'public/app/services/services.js'
-	    }
+				src: ['public/app/controllers/src/*.js'],
+				dest: 'public/app/controllers/controllers.js'
+			},
+			angular_directives: {
+				src: ['public/app/directives/src/*.js'],
+				dest: 'public/app/directives/directives.js'
+			},
+			angular_filters: {
+				src: ['public/app/filters/src/*.js'],
+				dest: 'public/app/filters/filters.js'
+			},
+			angular_services: {
+				src: ['public/app/services/src/*.js'],
+				dest: 'public/app/services/services.js'
+			}
 		},
 
 		// Minify JS
@@ -78,12 +78,12 @@ module.exports = function(grunt) {
 				files: ['public/app/app.js','public/app/*/*.js', 'public/app/*/src/*.js'],
 				tasks: 'dist-scripts'
 			}
-    }
+		}
 	});
 
 	// Loads grunt dependencies
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
