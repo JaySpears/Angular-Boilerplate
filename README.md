@@ -1,14 +1,14 @@
 #Angular Boilerplate Dependencies
 ###1. [Bower](http://bower.io/)
 
-####packages included:
-- angular
-- angular-local-storage
-- angular-route
+####Install components with `bower install` (packages included):
+ - angular
+ - angular-local-storage
+ - angular-route
 
 
 ###2. [Grunt](http://gruntjs.com/)
-####dependencies included:
+####Install packages with `npm install` (dependencies included):
 - grunt-contrib-sass
 - grunt-contrib-cssmin
 - grunt-contrib-connect
