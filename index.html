@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html ng-app="todoApp">
+<html ng-app="myApp">
   <head>
     <title>RE NAME</title>
     <link rel="stylesheet" href="public/assets/css/styles.min.css">
   </head>
   <body>
-  <div ng-view></div>
+
+  <div ng-controller="GreetingController as greeting">
+      <p ng-cloak>{{greeting}}</p>
+  </div>
 
   <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
   <script src="bower_components/angular-route/angular-route.min.js" charset="utf-8"></script>
