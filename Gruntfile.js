@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 					noCache: true
 				},
 				files: {
-					'app/assets/css/styles.css': 'app/assets/css/src/styles.scss'
+					'public/assets/css/styles.css': 'public/assets/css/src/styles.scss'
 				}
 			}
 		},
@@ -19,9 +19,9 @@ module.exports = function(grunt) {
     cssmin: {
       minify: {
         expand: true,
-        cwd: 'app/assets/css',
+        cwd: 'public/assets/css',
         src: ['styles.css'],
-        dest: 'app/assets/css',
+        dest: 'public/assets/css',
         ext: '.min.css'
       }
     },
@@ -40,20 +40,20 @@ module.exports = function(grunt) {
 		//Compiles controllers, directives, filters, and services into each of their own compiled file.
 		concat: {
 			angular_controllers: {
-        src: ['app/controllers/src/*.js'],
-        dest: 'app/controllers/controllers.js'
+        src: ['public/app/controllers/src/*.js'],
+        dest: 'public/app/controllers/controllers.js'
 	    },
 	    angular_directives: {
-        src: ['app/directives/src/*.js'],
-        dest: 'app/directives/directives.js'
+        src: ['public/app/directives/src/*.js'],
+        dest: 'public/app/directives/directives.js'
 	    },
 	    angular_filters: {
-        src: ['app/filters/src/*.js'],
-        dest: 'app/filters/filters.js'
+        src: ['public/app/filters/src/*.js'],
+        dest: 'public/app/filters/filters.js'
 	    },
 	    angular_services: {
-        src: ['app/services/src/*.js'],
-        dest: 'app/services/services.js'
+        src: ['public/app/services/src/*.js'],
+        dest: 'public/app/services/services.js'
 	    }
 		},
 
@@ -61,21 +61,21 @@ module.exports = function(grunt) {
 		uglify: {
 			scripts: {
 				src: [],
-				dest: 'app/scripts.js'
+				dest: 'public/app/scripts.js'
 			}
 		},
 
 		// Watch command
 		watch: {
 			styles: {
-				files: 'app/assets/css/src/*.scss',
+				files: 'public/assets/css/src/*.scss',
 				tasks: 'dist-styles',
 				options: {
 					livereload: true,
 				}
 			},
 			scripts:{
-				files: ['app/app.js','app/*/*.js', 'app/*/src/*.js'],
+				files: ['public/app/app.js','public/app/*/*.js', 'public/app/*/src/*.js'],
 				tasks: 'dist-scripts'
 			}
     }
