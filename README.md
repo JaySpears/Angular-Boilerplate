@@ -6,7 +6,7 @@
 #####[Bower](http://bower.io/), Install components with `bower install` (packages included):
  - angular
  - angular-local-storage
- - angular-route
+ - angular-ui-router
 
 
 #####[Grunt](http://gruntjs.com/), Install packages with `npm install` (dependencies included):

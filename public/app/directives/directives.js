@@ -1,0 +1,3 @@
+myApp.directive('directiveExample', [function(){
+    
+}]);

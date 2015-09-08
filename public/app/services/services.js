@@ -1,0 +1,3 @@
+myApp.factory('factoryExample', [function(){
+
+}]);

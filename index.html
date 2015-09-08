@@ -5,13 +5,11 @@
     <link rel="stylesheet" href="public/assets/css/styles.min.css">
   </head>
   <body>
-
-  <div ng-controller="GreetingController as greeting">
-      <p ng-cloak>{{greeting}}</p>
-  </div>
+      
+      <div ui-view></div>
 
   <script src="bower_components/angular/angular.min.js" charset="utf-8"></script>
-  <script src="bower_components/angular-route/angular-route.min.js" charset="utf-8"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" charset="utf-8"></script>
   <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js" charset="utf-8"></script>
 
   <!--   anuglar files  -->

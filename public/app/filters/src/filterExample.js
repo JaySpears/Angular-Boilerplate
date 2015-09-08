@@ -1,0 +1,3 @@
+myApp.filter('filterExample', [function(){
+
+}]);
