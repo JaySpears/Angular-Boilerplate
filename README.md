@@ -1,6 +1,6 @@
 #Angular Boilerplate
 ####Clone down the repository in your terminal:
-#####`git clone git@github.com:JoshSpears3/ngBoilerplate.git`
+#####git clone `git@github.com:JoshSpears3/Angular-Boilerplate.git`
 
 ##Dependencies
 #####[Bower](http://bower.io/), Install components with `bower install` (packages included):
